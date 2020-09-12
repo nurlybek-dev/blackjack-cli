@@ -10,8 +10,8 @@ class Deck(Hand):
 
     def populate(self):
         self.clear()
-        for s in range(Suit.CLUBS, Suit.SPADES):
-            for r in range(Rank.ACE, Rank.KING):
+        for s in range(Suit.CLUBS, Suit.SPADES + 1):
+            for r in range(Rank.ACE, Rank.KING + 1):
                 self.add(Card(r, s))
 
     def shuffle(self):
